@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/modal.css">
+    <title>Reyven Eran - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav class="custom-navbar">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="/static/img/logo.png" alt="ReiDev Logo">
+                </a>
+            </div>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Toggle navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <!-- Contact Me Button -->
+            <div class="nav-contact">
+                <a href="#contact" class="contact-button">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="text-content">
+
+                <h1>Hey There, I'm <span>ReiDev</span></h1>
+                <h3>
+                    Aspiring Software Developer
+                </h3>
+
+                <!-- Socials -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-buttons projects cta-link">View Projects</a>
+                    <a href="/static/files/Reyven_Eran_Resume.pdf" target="_blank" class="cta-buttons contact cta-link">View Resume</a>
+                </div>
+            </div>
+
+            <div class="picture-container">
+                <img class="display-picture" src="/static/img/pngkoto.jpg" alt="ReiDEV">
+            </div>
+        </div>
+
+        <!-- Wave at the bottom -->
+        <div class="wave">
+            <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+                <path d="M0,50 C360,150 1080,0 1440,50 L1440,150 L0,150 Z" fill="var(--bg-secondary)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="aboutme-section" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-copy">
+                    <p class="about-eyebrow">About Me</p>
+                    <h1>Reyven Lazo Eran</h1>
+                    <h5>Software Developer</h5>
+                    <p class="about-lead">
+                        Results-driven Computer Science graduate with hands-on experience building web and desktop
+                        applications using PHP, C#, VB.NET, and PostgreSQL.
+                    </p>
+                    <p>
+                        I enjoy turning ideas into reliable systems, with a strong focus on backend development,
+                        database design, debugging, and end-to-end delivery. Through freelance and academic work,
+                        I’ve built complete solutions while keeping code quality, technical clarity, and long-term
+                        maintainability in mind.
+                    </p>
+                    <button id="openModalBtn" class="about-modal-button" type="button">View Skills</button>
+                    <!-- <div class="about-highlights">
+                        <div class="about-highlight">
+                            <span>Focus</span>
+                            <strong>Backend & full-system development</strong>
+                        </div>
+                        <div class="about-highlight">
+                            <span>Strength</span>
+                            <strong>Problem-solving with practical solutions</strong>
+                        </div>
+                        <div class="about-highlight">
+                            <span>Goal</span>
+                            <strong>Efficient, reliable, scalable applications</strong>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="about-visual">
+                    <div class="picture-container-2">
+                        <img class="display-picture" src="/static/img/pngkoto4.jpg" alt="Portrait of Reyven Eran">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-heading section-heading-light">
+    <p class="section-eyebrow">Projects</p>
+    <p class="section-subtitle">
+        Selected projects that demonstrate my approach to building scalable, efficient, and user-focused applications.
+    </p>
+</div>
+
+<div class="project-grid">
+    <article class="project-card">
+        <div class="project-card-top">
+            <span class="project-tag">Web App</span>
+            <h3>Work Management System</h3>
+            <p>
+                A centralized system for managing employee tasks, work schedules, and operational workflows,
+                improving visibility and efficiency across day-to-day business processes.
+            </p>
+        </div>
+        <div class="project-stack">
+            <span>Go (Gin)</span>
+            <span>PostgreSQL</span>
+            <span>Tailwind CSS</span>
+            <span>HeidiSQL</span>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-card-top">
+            <span class="project-tag">Desktop App</span>
+            <h3>POS / Inventory System</h3>
+            <p>
+                A desktop application for managing inventory, processing transactions, and monitoring stock levels,
+                helping small businesses maintain accurate and efficient daily operations.
+            </p>
+        </div>
+        <div class="project-stack">
+            <span>C#</span>
+            <span>SQL</span>
+            <span>Windows Forms</span>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-card-top">
+            <span class="project-tag">Desktop App</span>
+            <h3>Gym Management System</h3>
+            <p>
+                A custom system for managing memberships, attendance, and records, featuring QR code integration
+                to speed up check-ins and reduce manual administrative work.
+            </p>
+        </div>
+        <div class="project-stack">
+            <span>C#</span>
+            <span>SQL</span>
+            <span>Windows Forms</span>
+            <span>QR Code Integration</span>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-card-top">
+            <span class="project-tag">Desktop App</span>
+            <h3>Grade Verification System</h3>
+            <p>
+                A verification tool that allows users to securely validate academic records using QR codes,
+                improving accessibility and reducing the risk of data tampering.
+            </p>
+        </div>
+        <div class="project-stack">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>XAML</span>
+            <span>QR Code Integration</span>
+        </div>
+    </article>
+</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contacts-section">
+        <div class="container">
+            <div class="contact-shell">
+                <div class="contact-copy">
+                    <p class="section-eyebrow">Contact</p>
+                    <h2>Let's build something thoughtful and reliable</h2>
+                    <p class="section-subtitle">
+                        I'm open to entry-level developer roles, freelance work, and collaborative projects where I can keep learning and contribute well.
+                    </p>
+                    <a href="/static/files/Reyven_Eran_Resume.pdf" target="_blank" class="contact-primary-link">View Resume</a>
+                </div>
+
+                <div class="contact-card-list">
+                    <a class="contact-card" href="mailto:reyveneran@example.com">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <strong>reyveneran@example.com</strong>
+                        </div>
+                    </a>
+
+                    <a class="contact-card" href="https://github.com/SoraSan01" target="_blank" rel="noreferrer">
+                        <div class="contact-icon">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <div>
+                            <span>GitHub</span>
+                            <strong>github.com/SoraSan01</strong>
+                        </div>
+                    </a>
+
+                    <a class="contact-card" href="https://www.instagram.com/reivxnn_/" target="_blank" rel="noreferrer">
+                        <div class="contact-icon">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                        <div>
+                            <span>Instagram</span>
+                            <strong>instagram.com/reivxnn_</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS MODAL -->
+     <div id="skillsModal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="skillsModalTitle">
+            <div class="modal-header">
+                <div class="modal-heading">
+                    <p class="modal-eyebrow">Skills Overview</p>
+                    <h2 id="skillsModalTitle">Tools I use to build thoughtful, reliable work</h2>
+                    <p class="modal-subtitle">A clean snapshot of my technical strengths, workflow, and development focus.</p>
+                </div>
+                <button id="closeModalBtn" class="modal-close" type="button" aria-label="Close skills modal">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">PHP</span>
+                        <span class="skill-chip">C#</span>
+                        <span class="skill-chip">VB.NET</span>
+                        <span class="skill-chip">JavaScript</span>
+                        <span class="skill-chip">SQL</span>
+                    </div>
+                </div>
+                <div class="modal-skill-group">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-chip-list">
+                        <span class="skill-chip">Tailwind</span>
+                        <span class="skill-chip">Bootstrap</span>
+                        <span class="skill-chip">PostgreSQL</span>
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">REST API</span>
+                        <span class="skill-chip">VS Code</span>
+                    </div>
+                </div>
+                <div class="modal-skill-group">
+                    <h3>Focus Areas</h3>
+                    <div class="modal-note-grid">
+                        <article class="modal-note">
+                            <span>01</span>
+                            <strong>Backend systems</strong>
+                            <p>Developing functional and maintainable backend code for applications.</p>
+                        </article>
+                        <article class="modal-note">
+                            <span>02</span>
+                            <strong>Database design</strong>
+                            <p>Creating clear and organized database structures for reliable data handling.</p>
+                        </article>
+                        <article class="modal-note">
+                            <span>03</span>
+                            <strong>Project delivery</strong>
+                            <p>Implementing project features from start to finish with practical solutions.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="/static/files/Reyven_Eran_Resume.pdf" target="_blank" class="modal-action">Download Resume</a>
+                <button id="closeModalFooterBtn" class="modal-secondary" type="button">Close</button>
+            </div>
+        </div>
+     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="text-center">
+                <h5>
+                    © 2026 REIDEV. All rights reserved.
+                </h5>
+            </div>
+        </div>
+    </footer>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
